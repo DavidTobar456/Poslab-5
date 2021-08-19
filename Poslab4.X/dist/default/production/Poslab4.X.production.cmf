@@ -1,0 +1,278 @@
+%CMF
+# %PSECTS Section
+# For each object file, details of its psects are enumerated here.
+# The begining of the section is indicated by %PSECTS.  The first
+# line indicates the name of the first object file, e.g.
+#    $foo.obj
+# Each line that follows describes a psect in that object file, until
+# the next object file.  The lines that describe a psect have the
+# format:
+#    <psect name> <class name> <space> <link address> <load addresses> <length> <delta>
+# All addresses and the length are given in unqualified hexadecimal
+# in delta units.  Any other numeric values are decimal.
+%PSECTS
+$build/default/production/main.o
+intVec code 0 0 0 10 2
+resVet CODE 0 0 0 3 2
+CODE - 0 0 0 183 2
+udata_bank0 BANK0 1 20 20 6 1
+udata_shr COMMON 1 70 70 2 1
+config CONFIG 4 2007 2007 2 2
+# %UNUSED Section
+# This section enumerates the unused ranges of each CLASS. Each entry
+# is described on a single line as follows:
+#    <class name> <range> <delta>
+# Addresses given in the range are in hexadecimal and units of delta.
+%UNUSED
+RAM 26-6F 1
+RAM A0-EF 1
+RAM 110-16F 1
+RAM 190-1EF 1
+BANK0 26-6F 1
+BANK1 A0-EF 1
+BANK2 110-16F 1
+BANK3 190-1EF 1
+CONST 183-1FFF 2
+ENTRY 183-1FFF 2
+IDLOC 2000-2003 2
+CODE 183-1FFF 2
+COMMON 72-7F 1
+EEDATA 2100-21FF 2
+STRCODE 183-1FFF 2
+STRING 183-1FFF 2
+# %LINETAB Section
+# This section enumerates the file/line to address mappings.
+# The beginning of the section is indicated by %LINETAB.
+# The first line indicates the name of the first object file, e.g.
+#   $foo.obj
+# Each line that follows describes a single mapping until the next
+# object file.  Mappings have the following format:
+#    <address> <psect name> <class name> ><line number>:<file name>
+# The address is absolute and given given in unqualified hex 
+# in delta units of the psect. All mappings within an object file
+# are in ascending order of addresses.
+# All other numeric values are in decimal.
+%LINETAB
+$build/default/production/main.o
+0 CODE ABS >78:C:\Users\david\David U\Programación de microcontroladores\Laboratorio 4\Poslab\Poslab4.X\main.s
+100 CODE ABS >80:C:\Users\david\David U\Programación de microcontroladores\Laboratorio 4\Poslab\Poslab4.X\main.s
+101 CODE ABS >81:C:\Users\david\David U\Programación de microcontroladores\Laboratorio 4\Poslab\Poslab4.X\main.s
+102 CODE ABS >82:C:\Users\david\David U\Programación de microcontroladores\Laboratorio 4\Poslab\Poslab4.X\main.s
+103 CODE ABS >83:C:\Users\david\David U\Programación de microcontroladores\Laboratorio 4\Poslab\Poslab4.X\main.s
+104 CODE ABS >84:C:\Users\david\David U\Programación de microcontroladores\Laboratorio 4\Poslab\Poslab4.X\main.s
+105 CODE ABS >85:C:\Users\david\David U\Programación de microcontroladores\Laboratorio 4\Poslab\Poslab4.X\main.s
+106 CODE ABS >86:C:\Users\david\David U\Programación de microcontroladores\Laboratorio 4\Poslab\Poslab4.X\main.s
+107 CODE ABS >87:C:\Users\david\David U\Programación de microcontroladores\Laboratorio 4\Poslab\Poslab4.X\main.s
+108 CODE ABS >88:C:\Users\david\David U\Programación de microcontroladores\Laboratorio 4\Poslab\Poslab4.X\main.s
+109 CODE ABS >89:C:\Users\david\David U\Programación de microcontroladores\Laboratorio 4\Poslab\Poslab4.X\main.s
+10A CODE ABS >90:C:\Users\david\David U\Programación de microcontroladores\Laboratorio 4\Poslab\Poslab4.X\main.s
+10B CODE ABS >91:C:\Users\david\David U\Programación de microcontroladores\Laboratorio 4\Poslab\Poslab4.X\main.s
+10C CODE ABS >92:C:\Users\david\David U\Programación de microcontroladores\Laboratorio 4\Poslab\Poslab4.X\main.s
+10D CODE ABS >93:C:\Users\david\David U\Programación de microcontroladores\Laboratorio 4\Poslab\Poslab4.X\main.s
+10E CODE ABS >97:C:\Users\david\David U\Programación de microcontroladores\Laboratorio 4\Poslab\Poslab4.X\main.s
+10F CODE ABS >98:C:\Users\david\David U\Programación de microcontroladores\Laboratorio 4\Poslab\Poslab4.X\main.s
+110 CODE ABS >99:C:\Users\david\David U\Programación de microcontroladores\Laboratorio 4\Poslab\Poslab4.X\main.s
+111 CODE ABS >100:C:\Users\david\David U\Programación de microcontroladores\Laboratorio 4\Poslab\Poslab4.X\main.s
+112 CODE ABS >101:C:\Users\david\David U\Programación de microcontroladores\Laboratorio 4\Poslab\Poslab4.X\main.s
+113 CODE ABS >105:C:\Users\david\David U\Programación de microcontroladores\Laboratorio 4\Poslab\Poslab4.X\main.s
+114 CODE ABS >106:C:\Users\david\David U\Programación de microcontroladores\Laboratorio 4\Poslab\Poslab4.X\main.s
+115 CODE ABS >107:C:\Users\david\David U\Programación de microcontroladores\Laboratorio 4\Poslab\Poslab4.X\main.s
+116 CODE ABS >108:C:\Users\david\David U\Programación de microcontroladores\Laboratorio 4\Poslab\Poslab4.X\main.s
+117 CODE ABS >112:C:\Users\david\David U\Programación de microcontroladores\Laboratorio 4\Poslab\Poslab4.X\main.s
+119 CODE ABS >113:C:\Users\david\David U\Programación de microcontroladores\Laboratorio 4\Poslab\Poslab4.X\main.s
+11A CODE ABS >114:C:\Users\david\David U\Programación de microcontroladores\Laboratorio 4\Poslab\Poslab4.X\main.s
+11B CODE ABS >116:C:\Users\david\David U\Programación de microcontroladores\Laboratorio 4\Poslab\Poslab4.X\main.s
+11D CODE ABS >117:C:\Users\david\David U\Programación de microcontroladores\Laboratorio 4\Poslab\Poslab4.X\main.s
+11E CODE ABS >118:C:\Users\david\David U\Programación de microcontroladores\Laboratorio 4\Poslab\Poslab4.X\main.s
+11F CODE ABS >119:C:\Users\david\David U\Programación de microcontroladores\Laboratorio 4\Poslab\Poslab4.X\main.s
+120 CODE ABS >120:C:\Users\david\David U\Programación de microcontroladores\Laboratorio 4\Poslab\Poslab4.X\main.s
+121 CODE ABS >121:C:\Users\david\David U\Programación de microcontroladores\Laboratorio 4\Poslab\Poslab4.X\main.s
+122 CODE ABS >122:C:\Users\david\David U\Programación de microcontroladores\Laboratorio 4\Poslab\Poslab4.X\main.s
+123 CODE ABS >123:C:\Users\david\David U\Programación de microcontroladores\Laboratorio 4\Poslab\Poslab4.X\main.s
+124 CODE ABS >124:C:\Users\david\David U\Programación de microcontroladores\Laboratorio 4\Poslab\Poslab4.X\main.s
+125 CODE ABS >126:C:\Users\david\David U\Programación de microcontroladores\Laboratorio 4\Poslab\Poslab4.X\main.s
+127 CODE ABS >127:C:\Users\david\David U\Programación de microcontroladores\Laboratorio 4\Poslab\Poslab4.X\main.s
+128 CODE ABS >128:C:\Users\david\David U\Programación de microcontroladores\Laboratorio 4\Poslab\Poslab4.X\main.s
+129 CODE ABS >129:C:\Users\david\David U\Programación de microcontroladores\Laboratorio 4\Poslab\Poslab4.X\main.s
+12A CODE ABS >130:C:\Users\david\David U\Programación de microcontroladores\Laboratorio 4\Poslab\Poslab4.X\main.s
+12B CODE ABS >133:C:\Users\david\David U\Programación de microcontroladores\Laboratorio 4\Poslab\Poslab4.X\main.s
+12D CODE ABS >134:C:\Users\david\David U\Programación de microcontroladores\Laboratorio 4\Poslab\Poslab4.X\main.s
+12E CODE ABS >135:C:\Users\david\David U\Programación de microcontroladores\Laboratorio 4\Poslab\Poslab4.X\main.s
+12F CODE ABS >136:C:\Users\david\David U\Programación de microcontroladores\Laboratorio 4\Poslab\Poslab4.X\main.s
+130 CODE ABS >137:C:\Users\david\David U\Programación de microcontroladores\Laboratorio 4\Poslab\Poslab4.X\main.s
+131 CODE ABS >138:C:\Users\david\David U\Programación de microcontroladores\Laboratorio 4\Poslab\Poslab4.X\main.s
+132 CODE ABS >141:C:\Users\david\David U\Programación de microcontroladores\Laboratorio 4\Poslab\Poslab4.X\main.s
+133 CODE ABS >142:C:\Users\david\David U\Programación de microcontroladores\Laboratorio 4\Poslab\Poslab4.X\main.s
+134 CODE ABS >143:C:\Users\david\David U\Programación de microcontroladores\Laboratorio 4\Poslab\Poslab4.X\main.s
+135 CODE ABS >144:C:\Users\david\David U\Programación de microcontroladores\Laboratorio 4\Poslab\Poslab4.X\main.s
+136 CODE ABS >145:C:\Users\david\David U\Programación de microcontroladores\Laboratorio 4\Poslab\Poslab4.X\main.s
+137 CODE ABS >146:C:\Users\david\David U\Programación de microcontroladores\Laboratorio 4\Poslab\Poslab4.X\main.s
+138 CODE ABS >149:C:\Users\david\David U\Programación de microcontroladores\Laboratorio 4\Poslab\Poslab4.X\main.s
+13A CODE ABS >150:C:\Users\david\David U\Programación de microcontroladores\Laboratorio 4\Poslab\Poslab4.X\main.s
+13B CODE ABS >151:C:\Users\david\David U\Programación de microcontroladores\Laboratorio 4\Poslab\Poslab4.X\main.s
+13C CODE ABS >153:C:\Users\david\David U\Programación de microcontroladores\Laboratorio 4\Poslab\Poslab4.X\main.s
+13E CODE ABS >154:C:\Users\david\David U\Programación de microcontroladores\Laboratorio 4\Poslab\Poslab4.X\main.s
+13F CODE ABS >155:C:\Users\david\David U\Programación de microcontroladores\Laboratorio 4\Poslab\Poslab4.X\main.s
+140 CODE ABS >156:C:\Users\david\David U\Programación de microcontroladores\Laboratorio 4\Poslab\Poslab4.X\main.s
+141 CODE ABS >159:C:\Users\david\David U\Programación de microcontroladores\Laboratorio 4\Poslab\Poslab4.X\main.s
+143 CODE ABS >160:C:\Users\david\David U\Programación de microcontroladores\Laboratorio 4\Poslab\Poslab4.X\main.s
+144 CODE ABS >161:C:\Users\david\David U\Programación de microcontroladores\Laboratorio 4\Poslab\Poslab4.X\main.s
+145 CODE ABS >162:C:\Users\david\David U\Programación de microcontroladores\Laboratorio 4\Poslab\Poslab4.X\main.s
+146 CODE ABS >163:C:\Users\david\David U\Programación de microcontroladores\Laboratorio 4\Poslab\Poslab4.X\main.s
+147 CODE ABS >164:C:\Users\david\David U\Programación de microcontroladores\Laboratorio 4\Poslab\Poslab4.X\main.s
+148 CODE ABS >165:C:\Users\david\David U\Programación de microcontroladores\Laboratorio 4\Poslab\Poslab4.X\main.s
+14A CODE ABS >165:C:\Users\david\David U\Programación de microcontroladores\Laboratorio 4\Poslab\Poslab4.X\main.s
+14B CODE ABS >165:C:\Users\david\David U\Programación de microcontroladores\Laboratorio 4\Poslab\Poslab4.X\main.s
+14C CODE ABS >165:C:\Users\david\David U\Programación de microcontroladores\Laboratorio 4\Poslab\Poslab4.X\main.s
+14D CODE ABS >166:C:\Users\david\David U\Programación de microcontroladores\Laboratorio 4\Poslab\Poslab4.X\main.s
+14E CODE ABS >170:C:\Users\david\David U\Programación de microcontroladores\Laboratorio 4\Poslab\Poslab4.X\main.s
+14F CODE ABS >171:C:\Users\david\David U\Programación de microcontroladores\Laboratorio 4\Poslab\Poslab4.X\main.s
+150 CODE ABS >172:C:\Users\david\David U\Programación de microcontroladores\Laboratorio 4\Poslab\Poslab4.X\main.s
+151 CODE ABS >173:C:\Users\david\David U\Programación de microcontroladores\Laboratorio 4\Poslab\Poslab4.X\main.s
+152 CODE ABS >174:C:\Users\david\David U\Programación de microcontroladores\Laboratorio 4\Poslab\Poslab4.X\main.s
+153 CODE ABS >175:C:\Users\david\David U\Programación de microcontroladores\Laboratorio 4\Poslab\Poslab4.X\main.s
+154 CODE ABS >178:C:\Users\david\David U\Programación de microcontroladores\Laboratorio 4\Poslab\Poslab4.X\main.s
+155 CODE ABS >179:C:\Users\david\David U\Programación de microcontroladores\Laboratorio 4\Poslab\Poslab4.X\main.s
+156 CODE ABS >180:C:\Users\david\David U\Programación de microcontroladores\Laboratorio 4\Poslab\Poslab4.X\main.s
+157 CODE ABS >183:C:\Users\david\David U\Programación de microcontroladores\Laboratorio 4\Poslab\Poslab4.X\main.s
+158 CODE ABS >184:C:\Users\david\David U\Programación de microcontroladores\Laboratorio 4\Poslab\Poslab4.X\main.s
+159 CODE ABS >185:C:\Users\david\David U\Programación de microcontroladores\Laboratorio 4\Poslab\Poslab4.X\main.s
+15A CODE ABS >186:C:\Users\david\David U\Programación de microcontroladores\Laboratorio 4\Poslab\Poslab4.X\main.s
+15B CODE ABS >187:C:\Users\david\David U\Programación de microcontroladores\Laboratorio 4\Poslab\Poslab4.X\main.s
+15C CODE ABS >188:C:\Users\david\David U\Programación de microcontroladores\Laboratorio 4\Poslab\Poslab4.X\main.s
+15D CODE ABS >191:C:\Users\david\David U\Programación de microcontroladores\Laboratorio 4\Poslab\Poslab4.X\main.s
+15E CODE ABS >192:C:\Users\david\David U\Programación de microcontroladores\Laboratorio 4\Poslab\Poslab4.X\main.s
+15F CODE ABS >193:C:\Users\david\David U\Programación de microcontroladores\Laboratorio 4\Poslab\Poslab4.X\main.s
+160 CODE ABS >194:C:\Users\david\David U\Programación de microcontroladores\Laboratorio 4\Poslab\Poslab4.X\main.s
+161 CODE ABS >195:C:\Users\david\David U\Programación de microcontroladores\Laboratorio 4\Poslab\Poslab4.X\main.s
+162 CODE ABS >196:C:\Users\david\David U\Programación de microcontroladores\Laboratorio 4\Poslab\Poslab4.X\main.s
+163 CODE ABS >197:C:\Users\david\David U\Programación de microcontroladores\Laboratorio 4\Poslab\Poslab4.X\main.s
+164 CODE ABS >198:C:\Users\david\David U\Programación de microcontroladores\Laboratorio 4\Poslab\Poslab4.X\main.s
+165 CODE ABS >201:C:\Users\david\David U\Programación de microcontroladores\Laboratorio 4\Poslab\Poslab4.X\main.s
+166 CODE ABS >202:C:\Users\david\David U\Programación de microcontroladores\Laboratorio 4\Poslab\Poslab4.X\main.s
+167 CODE ABS >203:C:\Users\david\David U\Programación de microcontroladores\Laboratorio 4\Poslab\Poslab4.X\main.s
+168 CODE ABS >204:C:\Users\david\David U\Programación de microcontroladores\Laboratorio 4\Poslab\Poslab4.X\main.s
+169 CODE ABS >205:C:\Users\david\David U\Programación de microcontroladores\Laboratorio 4\Poslab\Poslab4.X\main.s
+16A CODE ABS >206:C:\Users\david\David U\Programación de microcontroladores\Laboratorio 4\Poslab\Poslab4.X\main.s
+16B CODE ABS >207:C:\Users\david\David U\Programación de microcontroladores\Laboratorio 4\Poslab\Poslab4.X\main.s
+16C CODE ABS >211:C:\Users\david\David U\Programación de microcontroladores\Laboratorio 4\Poslab\Poslab4.X\main.s
+16D CODE ABS >212:C:\Users\david\David U\Programación de microcontroladores\Laboratorio 4\Poslab\Poslab4.X\main.s
+16E CODE ABS >213:C:\Users\david\David U\Programación de microcontroladores\Laboratorio 4\Poslab\Poslab4.X\main.s
+16F CODE ABS >214:C:\Users\david\David U\Programación de microcontroladores\Laboratorio 4\Poslab\Poslab4.X\main.s
+170 CODE ABS >215:C:\Users\david\David U\Programación de microcontroladores\Laboratorio 4\Poslab\Poslab4.X\main.s
+171 CODE ABS >216:C:\Users\david\David U\Programación de microcontroladores\Laboratorio 4\Poslab\Poslab4.X\main.s
+172 CODE ABS >217:C:\Users\david\David U\Programación de microcontroladores\Laboratorio 4\Poslab\Poslab4.X\main.s
+173 CODE ABS >218:C:\Users\david\David U\Programación de microcontroladores\Laboratorio 4\Poslab\Poslab4.X\main.s
+174 CODE ABS >219:C:\Users\david\David U\Programación de microcontroladores\Laboratorio 4\Poslab\Poslab4.X\main.s
+175 CODE ABS >220:C:\Users\david\David U\Programación de microcontroladores\Laboratorio 4\Poslab\Poslab4.X\main.s
+176 CODE ABS >223:C:\Users\david\David U\Programación de microcontroladores\Laboratorio 4\Poslab\Poslab4.X\main.s
+177 CODE ABS >224:C:\Users\david\David U\Programación de microcontroladores\Laboratorio 4\Poslab\Poslab4.X\main.s
+178 CODE ABS >225:C:\Users\david\David U\Programación de microcontroladores\Laboratorio 4\Poslab\Poslab4.X\main.s
+179 CODE ABS >226:C:\Users\david\David U\Programación de microcontroladores\Laboratorio 4\Poslab\Poslab4.X\main.s
+17A CODE ABS >227:C:\Users\david\David U\Programación de microcontroladores\Laboratorio 4\Poslab\Poslab4.X\main.s
+17B CODE ABS >228:C:\Users\david\David U\Programación de microcontroladores\Laboratorio 4\Poslab\Poslab4.X\main.s
+17C CODE ABS >231:C:\Users\david\David U\Programación de microcontroladores\Laboratorio 4\Poslab\Poslab4.X\main.s
+17D CODE ABS >232:C:\Users\david\David U\Programación de microcontroladores\Laboratorio 4\Poslab\Poslab4.X\main.s
+17F CODE ABS >232:C:\Users\david\David U\Programación de microcontroladores\Laboratorio 4\Poslab\Poslab4.X\main.s
+180 CODE ABS >232:C:\Users\david\David U\Programación de microcontroladores\Laboratorio 4\Poslab\Poslab4.X\main.s
+181 CODE ABS >232:C:\Users\david\David U\Programación de microcontroladores\Laboratorio 4\Poslab\Poslab4.X\main.s
+182 CODE ABS >233:C:\Users\david\David U\Programación de microcontroladores\Laboratorio 4\Poslab\Poslab4.X\main.s
+0 intVec code >60:C:\Users\david\David U\Programación de microcontroladores\Laboratorio 4\Poslab\Poslab4.X\main.s
+4 intVec code >62:C:\Users\david\David U\Programación de microcontroladores\Laboratorio 4\Poslab\Poslab4.X\main.s
+5 intVec code >63:C:\Users\david\David U\Programación de microcontroladores\Laboratorio 4\Poslab\Poslab4.X\main.s
+6 intVec code >64:C:\Users\david\David U\Programación de microcontroladores\Laboratorio 4\Poslab\Poslab4.X\main.s
+7 intVec code >66:C:\Users\david\David U\Programación de microcontroladores\Laboratorio 4\Poslab\Poslab4.X\main.s
+8 intVec code >67:C:\Users\david\David U\Programación de microcontroladores\Laboratorio 4\Poslab\Poslab4.X\main.s
+9 intVec code >68:C:\Users\david\David U\Programación de microcontroladores\Laboratorio 4\Poslab\Poslab4.X\main.s
+A intVec code >69:C:\Users\david\David U\Programación de microcontroladores\Laboratorio 4\Poslab\Poslab4.X\main.s
+B intVec code >71:C:\Users\david\David U\Programación de microcontroladores\Laboratorio 4\Poslab\Poslab4.X\main.s
+C intVec code >72:C:\Users\david\David U\Programación de microcontroladores\Laboratorio 4\Poslab\Poslab4.X\main.s
+D intVec code >73:C:\Users\david\David U\Programación de microcontroladores\Laboratorio 4\Poslab\Poslab4.X\main.s
+E intVec code >74:C:\Users\david\David U\Programación de microcontroladores\Laboratorio 4\Poslab\Poslab4.X\main.s
+F intVec code >75:C:\Users\david\David U\Programación de microcontroladores\Laboratorio 4\Poslab\Poslab4.X\main.s
+0 resVet CODE >54:C:\Users\david\David U\Programación de microcontroladores\Laboratorio 4\Poslab\Poslab4.X\main.s
+0 resVet CODE >56:C:\Users\david\David U\Programación de microcontroladores\Laboratorio 4\Poslab\Poslab4.X\main.s
+2 resVet CODE >57:C:\Users\david\David U\Programación de microcontroladores\Laboratorio 4\Poslab\Poslab4.X\main.s
+# %SYMTAB Section
+# An enumeration of all symbols in the program.
+# The beginning of the section is indicated by %SYMTAB.
+# Each line describes a single symbol as follows:
+#    <label> <value> [-]<load-adj> <class> <space> <psect> <file-name>
+# The value and load-adj are both in unqualified hexadecimal.
+# All other numeric values are in decimal.  The load-adj is the
+# quantity one needs to add to the symbol value in order to obtain the load
+# address of the symbol.  This value may be signed. If the symbol
+# was defined in a psect then <psect> will be "-". File-name
+# is the name of the object file in which the symbol was defined.
+%SYMTAB
+__Hspace_0 183 0 ABS 0 - -
+__Hspace_1 72 0 ABS 0 - -
+__Hspace_3 0 0 ABS 0 - -
+__Hspace_4 4010 0 ABS 0 - -
+__Hudata_bank0 0 0 ABS 0 udata_bank0 -
+__Hudata_bank1 0 0 ABS 0 udata_bank1 -
+__Hudata_bank2 0 0 ABS 0 udata_bank2 -
+__Hudata_bank3 0 0 ABS 0 udata_bank3 -
+__Hedata 0 0 ABS 0 edata -
+__Hudata 0 0 ABS 0 udata -
+__Hconfig 4012 0 CONFIG 4 config -
+__Ledata 0 0 ABS 0 edata -
+__Ludata 0 0 ABS 0 udata -
+__HCODE 306 0 ABS 0 CODE -
+__Hcode 0 0 ABS 0 code -
+__Hdata 0 0 ABS 0 data -
+__LCODE 0 0 ABS 0 CODE -
+__Lcode 0 0 ABS 0 code -
+__Ldata 0 0 ABS 0 data -
+__HintVec 20 0 code 0 intVec -
+__S0 0 0 ABS 0 - -
+__S1 72 0 ABS 0 - -
+__S3 0 0 ABS 0 - -
+__HresVet 0 0 ABS 0 resVet -
+__Lconfig 0 0 CONFIG 4 config -
+__LintVec 0 0 code 0 intVec -
+__Lspace_0 0 0 ABS 0 - -
+__Lspace_1 0 0 ABS 0 - -
+__Lspace_3 0 0 ABS 0 - -
+__Lspace_4 0 0 ABS 0 - -
+__LresVet 0 0 ABS 0 resVet -
+__Ludata_bank0 0 0 ABS 0 udata_bank0 -
+__Ludata_bank1 0 0 ABS 0 udata_bank1 -
+__Ludata_bank2 0 0 ABS 0 udata_bank2 -
+__Ludata_bank3 0 0 ABS 0 udata_bank3 -
+__Hudata_shr 0 0 ABS 0 udata_shr -
+__Ludata_shr 0 0 ABS 0 udata_shr -
+# %SPLITSTAB Section
+# This section enumerates all the psect splits performed by the assembler.
+# The beginning of the section is indicated by %SPLITSTAB.
+# Each line is a record a particular split, where the parent psect is on
+# the left and the child on the right.  Note that a child psect is always
+# split form the top of the parent psect. All splits from a given parent
+# are listed in the order in which they occurred.
+%SPLITSTAB
+# %DABS Section
+# This section contains a table of all usuage of the assember
+# directive DABS in the program. Each line has the following format:
+#   <name> <space> <address> <size>
+# If the DABS was originally labelled then that shall be <name>,
+# otherwise name will be "-".  The <space> number is in decimal.
+# <address> and <size> are in byte units as unqaulified hexadecimal
+%DABS
+# %SEGMENTS Section
+# This sections enumerates the segments of the program.  Each segment
+# is described on a single line as follows:
+#    <name> <space> <link address> <file address> <size> <delta>
+# Addresses and size are in unqualified hexadecimal.  The link address
+# and size are in units of delta. The file address is in units of bytes.
+# All other numeric quantities are in decimal.
+%SEGMENTS
+udata_bank0 1 20 20 6 1
+udata_shr 1 70 70 2 1
+# %NOTES Section
+# This section contains data of all the note-psects.  The beginning of the section
+# is indicated by %NOTES. The first line indicates the name and decimal
+# byte-length of the first note-psect, e.g.
+#   $codecov_info_hdr 16
+# Each line that follows contains the byte-data of the psect in hexadecimal as a
+# space-separated list. These lines are limited to 16 bytes of data.
+%NOTES
